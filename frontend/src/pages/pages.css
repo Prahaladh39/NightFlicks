@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+html body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #292828;
+  width: 100vw;
+  height: 100vh;
+}
+.pt {
+  display: flex;
+}
+.left img {
+  margin-top: -5rem;
+  border-radius: 1rem;
+  margin-left: 13rem;
+  width: 60%;
+}
+.nav-h {
+  width: 20rem;
+}
+.right-h {
+  color: #ccebec;
+  margin-top: 8rem;
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  margin-left: 2rem;
+  font-weight: 500;
+}
+.right-p {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  margin-left: 2rem;
+  width: 50%;
+}
+.right {
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+.right span {
+  color: #ccebec;
+  font-weight: 700;
+}
+.plot {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.lang {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+.action {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  width: 80%;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+.sub-h {
+  font-family: "Anton", sans-serif;
+  color: #ccebec;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  margin-bottom: 0.7rem;
+  padding-left: 0.5rem;
+}
+.sub-pt {
+  margin-left: 18rem;
+  margin-top: 4rem;
+  background-color: #4a4a4a;
+  padding: 0.5rem 0.5rem 1rem 1rem;
+  border-radius: 0.8rem;
+  width: 65%;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+.sub-pt h1 {
+  color: #ccebec;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.st {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.st-h {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ccebec;
+}
+.st-p {
+  font-style: italic;
+}
+.load {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 19rem;
+  opacity: 0.5;
+}
+.wish-h {
+  font-size: 3rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 300;
+  color: #ccebec;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+.fle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-left: 10rem;
+}
+.fle img {
+  height: 23rem;
+  border-radius: 1rem;
+}
+.fle p {
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+.wishb {
+  height: 2.5rem;
+  width: 8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #ccebec;
+  border: none;
+  border-radius: 0.6rem;
+  margin-left: 25rem;
+  margin-top: 3rem;
+  font-family: "Rubik", sans-serif;
+}
+.wishb:hover {
+  background-color: #7fedf0;
+  cursor: pointer;
+}
+.wishb2 {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: #ccebec;
+  border: none;
+  border-radius: 0.6rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.wishb2:hover {
+  background-color: #7fedf0;
+  cursor: pointer;
+}
