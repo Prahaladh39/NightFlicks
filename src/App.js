@@ -13,10 +13,8 @@ import menu from "./menu_24dp_BLACK_FILL0_wght400_GRAD0_opsz24.png";
 import Test from "./pages/Test";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import WishList from "./pages/WishList.js";
-
 const key = "48bd2643";
-const Search = "The Hangover";
-const id = "tt0816258";
+
 //http://www.omdbapi.com/?i=tt3896198&apikey=48bd2643&i=${id}
 //`http://www.omdbapi.com/?apikey=48bd2643&s=${search}`
 
@@ -25,10 +23,13 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [select, setSelect] = useState("");
   const [watchlist, setWatchlist] = useState([]);
+  const apikey = "48bd2643";
+  //const [test, settest] = useState(second)
 
   // Function to add a movie to the watchlist
   const addToWatchlist = (movie) => {
     setWatchlist((prevList) => {
+      alert("Movie Added Successfully");
       const exists = prevList.some((m) => m.imdbID === movie.imdbID);
       if (!exists) {
         return [...prevList, movie];
@@ -41,11 +42,11 @@ function App() {
     function () {
       async function Test() {
         const res = await fetch(
-          `http://www.omdbapi.com/?i=tt3896198&apikey=48bd2643&s=${search}`
+          `https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?i=tt3896198&apikey=${apikey}&s=${search}`
         );
         const data = await res.json();
+
         setMovies(data.Search || []);
-        console.log(data);
       }
       Test();
     },
@@ -129,7 +130,7 @@ function MainContent({
 
           <div className="t">
             <img src={menu} alt="menu" width={30} className="menu" />
-            <Link to="wishlist" className="watch">
+            <Link to="/wishlist" className="watch">
               <p>My Watchlist</p>
             </Link>
             <a href="#explore" className="aa">
@@ -300,4 +301,5 @@ function SearchList({ movies, setSelect }) {
     </div>
   );
 }
+// https://prahaladh04.github.io/night-flicks/
 export default App;

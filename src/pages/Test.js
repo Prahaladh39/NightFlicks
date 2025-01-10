@@ -8,15 +8,14 @@ const Test = ({ select, addToWatchlist }) => {
   const [displayMovie, setDisplayMovie] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [arr, setArr] = useState([]);
-
+  const apikey = "48bd2643";
   useEffect(() => {
     setIsLoading(true);
 
     async function fetchMovie() {
       try {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=48bd2643&i=${select}`
+          `https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=${apikey}&i=${select}`
         );
         const data = await res.json();
         setDisplayMovie(data);

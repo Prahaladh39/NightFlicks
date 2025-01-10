@@ -49,6 +49,10 @@ body {
   margin-left: 2rem;
   width: 50%;
 }
+.right {
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
 .right span {
   color: #ccebec;
   font-weight: 700;
@@ -92,9 +96,8 @@ body {
   margin-left: 18rem;
   margin-top: 4rem;
   background-color: #4a4a4a;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  border-radius: 0.3rem;
+  padding: 0.5rem 0.5rem 1rem 1rem;
+  border-radius: 0.8rem;
   width: 65%;
   font-family: "Rubik", sans-serif;
   color: white;
