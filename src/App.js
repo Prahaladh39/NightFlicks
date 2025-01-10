@@ -13,7 +13,6 @@ import menu from "./menu_24dp_BLACK_FILL0_wght400_GRAD0_opsz24.png";
 import Test from "./pages/Test";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import WishList from "./pages/WishList.js";
-const key = "48bd2643";
 
 //http://www.omdbapi.com/?i=tt3896198&apikey=48bd2643&i=${id}
 //`http://www.omdbapi.com/?apikey=48bd2643&s=${search}`
