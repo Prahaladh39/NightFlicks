@@ -12,6 +12,10 @@ html body {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+body {
+  transform: scale(1);
+  transform-origin: 0 0;
+}
 * {
   box-sizing: border-box;
   padding: 0px;
