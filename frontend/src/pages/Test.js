@@ -14,9 +14,7 @@ const Test = ({ select, addToWatchlist }) => {
 
     async function fetchMovie() {
       try {
-        const res = await fetch(
-          `https://night-theta-rosy.vercel.app/movie?id=${select}`
-        );
+        const res = await fetch(`https://nighti.vercel.app/movie?id=${select}`);
         const data = await res.json();
         setDisplayMovie(data);
         setIsLoading(false);

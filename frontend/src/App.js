@@ -41,9 +41,7 @@ function App() {
   useEffect(
     function () {
       async function Test() {
-        const res = await fetch(
-          `https://night-theta-rosy.vercel.app/movies?s=${search}`
-        );
+        const res = await fetch(`https://nighti.vercel.app/movies?s=${search}`);
         const data = await res.json();
 
         setMovies(data.Search || []);
