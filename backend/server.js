@@ -5,7 +5,13 @@ const cors = require("cors");
 const app = express();
 
 // Enable CORS
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://nighti-jq3xdi1kx-prahaladhs-projects.vercel.app/",
+    methods: ["GET", "POST", "DELETE"],
+    allowedHeaders: ["Content-Type", "'Authorization'"],
+  })
+);
 
 // Route for fetching movies based on search
 app.get("/movies", async (req, res) => {
@@ -58,8 +64,6 @@ app.get("/movie", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch movie" });
   }
 });
-
-// Start the server
 
 // Start the server
 const PORT = process.env.PORT || 5000; // Use environment variable or fallback to 5000
