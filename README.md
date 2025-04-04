@@ -32,8 +32,6 @@ NightFlicks/
 │   ├── package.json
 │── README.md
 
-🌍 Deployment
-Vercel : https://sunrise-fqp3a01kf-prahaladhs-projects.vercel.app
 
 📌 How to Run Locally
 Clone the repository
